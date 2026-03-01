@@ -1,0 +1,113 @@
+@import url(reset.css);
+
+/* Importação de fontes */
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilo Desktop */
+body {
+    background-color: #0E1014;
+    color: #FFFFFF;
+    font-family: "Poppins-Regular", sans-serif;
+}
+
+.imagem-logo {
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: "Poppins-bold", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto 0;
+}
+
+.titulo-destacado {
+    color: #9747FF;
+}
+
+.button-dark {
+    display: block;
+    color: #FFFFFF;
+    font-size: 24px;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+.button-dark:hover {
+    background-color: #8233E8;
+}
+
+.imagem-principal {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/* Estilo Tablet */
+@media (max-width: 769px) {
+    .imagem-logo {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+
+    .imagem-principal {
+        width: 659.5px;
+    }
+}
+
+/* Estilo Celular */
+@media (max-width: 376px) {
+    .imagem-logo {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 341px;
+    }
+
+    .button-dark {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    .imagem-principal {
+        width: 341px;
+        height: 230px;
+    }
+}
